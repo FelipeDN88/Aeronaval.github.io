@@ -14,6 +14,8 @@ const Services: React.FC = () => {
           backgroundImage: `url(${RocketImg})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          backgroundAttachment: 'fixed',
           filter: 'brightness(0.9) contrast(1.1)',
         }}
       ></div>

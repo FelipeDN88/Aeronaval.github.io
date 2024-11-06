@@ -6,12 +6,12 @@ const HeaderStyles = {
   scrollBackground: "bg-white shadow-md",
   hidden: "hidden",
   visible: "block",
-  logo: "h-12",
+  logo: "h-14 ml-20",
   mobileMenuButton: "inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200",
   menuIcon: "w-5 h-5",
   navList: "font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8",
   navLink: "text-[18px] font-medium cursor-pointer hover:text-[#55679C]",
-  logoLetter: "h-10",
+  logoLetter: "h-10 p-1",
   mobileMenuOverlay: "fixed inset-x-0 top-0 bottom-0 bg-black bg-opacity-50",
 };
 

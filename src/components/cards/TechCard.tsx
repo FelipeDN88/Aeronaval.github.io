@@ -33,7 +33,7 @@ const TechCard: React.FC<TechCardProps> = ({ icon, label, index }) => {
         initial="hidden"
         animate="show"
         className={`
-          ${isMobile ? "w-[120px] h-[120px] min-w-[100px]" : "w-[155px] h-[155px] min-w-[150px]"}
+          ${isMobile ? "w-[71px] h-[85px] max-w-[110px] max-h-[100px]" : "w-[155px] h-[155px] min-w-[150px]"}
           bg-gradient-to-r from-[#004e78] via-[#045f8a] via-[#09709c] via-[#0d80ae] to-[#1191c0]
           p-[3px]
           rounded-[15px]
@@ -60,7 +60,7 @@ const TechCard: React.FC<TechCardProps> = ({ icon, label, index }) => {
           <img src={icon} alt={label} className={`${isMobile ? "w-12 h-12" : "w-16 h-16"} object-contain mb-2`} />
           <h3 className={`
             text-black
-            ${isMobile ? "text-[12px]" : "text-[14px]"}
+            ${isMobile ? "text-[8px]" : "text-[14px]"}
             font-bold
             text-center
             w-full

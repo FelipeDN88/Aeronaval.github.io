@@ -63,7 +63,7 @@ const Header: React.FC = () => {
       return (
         <>
           <a href="#home" className="flex items-center space-x-3" onClick={() => handleNavClick('home')}>
-            <img src={Logo} alt="Logo" className={HeaderStyles.logo} />
+            <img src={LogoLetter} alt="Logo" className={HeaderStyles.logoLetter} />
           </a>
           <div className={`hidden md:flex flex-grow justify-center`}>
             <ul className={`flex space-x-6 ${scrolling ? 'text-gray-900' : 'text-gray-200'}`}>
@@ -81,7 +81,7 @@ const Header: React.FC = () => {
             </ul>
           </div>
           <a href="#home" onClick={() => handleNavClick('home')}>
-            <img src={LogoLetter} alt="Logo Letter" className={HeaderStyles.logoLetter} />
+            <img src={Logo} alt="Logo Letter" className={HeaderStyles.logo} />
           </a>
         </>
       );
