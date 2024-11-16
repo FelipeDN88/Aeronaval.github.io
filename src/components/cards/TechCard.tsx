@@ -46,7 +46,7 @@ const TechCard: React.FC<TechCardProps> = ({ icon, label, index }) => {
       >
         <div
           className={`
-            bg-gray-200
+            bg-gray-100
             rounded-[15px]
             p-4
             flex
