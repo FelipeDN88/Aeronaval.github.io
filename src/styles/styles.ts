@@ -118,7 +118,7 @@ const FooterStyles = {
   button: "bg-[#001863] text-white p-1.5 ml-2 rounded-xl hover:bg-blue-500 transition duration-300 flex-shrink-0",
 };
 const TextStyles = {
-  title: "font-bold font-square lg:text-[60px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px]",
+  title: "text-white font-bold font-square lg:text-[60px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px]",
   subTitle: "font-square font-semibold lg:text-[35px] sm:text-[40px] xs:text-[35px] text-[30px] lg:leading-[60px]",
   paragraph: "font-medium lg:text-[21px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[31px]",
   smallParagraph: "font-square font-medium lg:text-[20px] sm:text-[20px] xs:text-[18px] text-[14px] lg:leading-[31px]",
