@@ -91,7 +91,7 @@ const ConsultingStyles = {
   title: "text-2xl font-bold mb-4 text-center",
   subtitle: "text-xl font-semibold mb-2",
   paragraph: "text-base leading-relaxed mb-4",
-  list: "list-disc pl-5 space-y-2",
+  list: "list-disc pl-5 space-y-2 font-square",
   listItem: "text-base",
 
   // Position helpers
