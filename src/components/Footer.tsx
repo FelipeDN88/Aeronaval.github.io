@@ -1,7 +1,7 @@
 import React from 'react';
 import { SectionWrapper } from '../hoc';
 import { FooterStyles, TextStyles } from '../styles/styles';
-import { useDeviceType } from '../utils/DevicesTypes';
+import { useDeviceType } from '../hooks/DevicesTypes';
 
 const Footer: React.FC = () => {
   const { isMobile } = useDeviceType();

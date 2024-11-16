@@ -3,7 +3,7 @@ import LogoLetter from '../assets/logo-letter.png';
 import Logo from '../assets/logo.png';
 import { navLinks } from '../constants';
 import { HeaderStyles, TextStyles } from '../styles/styles';
-import { useDeviceType } from '../utils/DevicesTypes';
+import { useDeviceType } from '../hooks/DevicesTypes';
 
 const Header: React.FC = () => {
   const [scrolling, setScrolling] = useState(false);

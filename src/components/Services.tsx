@@ -3,8 +3,11 @@ import RocketImg from '../assets/rocket-img.jpg';
 import LogoMlbr from '../assets/logo-mlbr.png';
 import { SectionWrapper } from '../hoc';
 import { ServicesStyles, TextStyles } from '../styles/styles';
+import { useDeviceType } from '../hooks/DevicesTypes'; // Certifique-se de importar o hook
 
 const Services: React.FC = () => {
+  const { isMobile } = useDeviceType(); // Verifica se é mobile
+
   return (
     <section className={ServicesStyles.section}>
       <div className={ServicesStyles.dividerTop}></div>
@@ -20,7 +23,7 @@ const Services: React.FC = () => {
         }}
       ></div>
 
-            <h1 className={`text-center ${TextStyles.title}`}>Serviços</h1>
+      <h1 className={`text-center ${TextStyles.title}`}>Serviços</h1>
       <div className="relative flex items-center justify-center w-full h-full p-8">
         <div className={ServicesStyles.card.container}>
           <p className={`${TextStyles.paragraph} ${ServicesStyles.textContainer}`}>
@@ -33,7 +36,7 @@ const Services: React.FC = () => {
           <img
             src={LogoMlbr}
             alt="Logo MLBR"
-            className={ServicesStyles.card.logo}
+            className={isMobile ? ServicesStyles.card.logoMobile : ServicesStyles.card.logo}
           />
         </div>
       </div>

@@ -1,6 +1,6 @@
 import { send } from 'emailjs-com';
 import Swal from 'sweetalert2';
-import { displayErrorAlert, validateAndGenerateErrorMessages } from '../utils/errorHandle';
+import { displayErrorAlert, validateAndGenerateErrorMessages } from '../validations/errorHandle';
 
 export const handleSubmit = async (
   e: React.FormEvent,

@@ -1,4 +1,4 @@
-import { useDeviceType } from "../utils/DevicesTypes";
+import { useDeviceType } from "../hooks/DevicesTypes";
 
 const HeaderStyles = {
   header: "p-4 w-full fixed top-0 left-0 z-50 transition-all duration-300",
@@ -37,6 +37,7 @@ const CardStyles = {
   text: "text-black mb-8",
   strong: "text-2xl",
   logo: "bottom-4 left-4 h-72 mt-5",
+  logoMobile: "bottom-4 left-4 h-56 mt-5",
 };
 
 const ServicesStyles = {

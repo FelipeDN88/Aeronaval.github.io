@@ -1,7 +1,7 @@
 import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
-import { useDeviceType } from "../../utils/DevicesTypes";
+import { useDeviceType } from "../../hooks/DevicesTypes";
 
 interface TechCardProps {
   icon: string;

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
-import { useDeviceType } from "../utils/DevicesTypes";
+import { useDeviceType } from "../hooks/DevicesTypes";
 import { ProjectCard } from "./cards/ProjectCard";
 import { ProjectsStyles, TextStyles } from "../styles/styles";
 
