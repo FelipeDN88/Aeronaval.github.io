@@ -7,7 +7,7 @@ const HeaderStyles = {
   hidden: "hidden",
   visible: "block",
   logo: "h-14 ml-20",
-  mobileMenuButton: "inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200",
+  mobileMenuButton: "bg-neutral-950 inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200",
   menuIcon: "w-5 h-5",
   navList: "font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8",
   navLink: "text-[18px] font-medium cursor-pointer hover:text-[#55679C]",
