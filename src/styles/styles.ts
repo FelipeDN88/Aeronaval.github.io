@@ -11,6 +11,7 @@ const HeaderStyles = {
   menuIcon: "w-5 h-5",
   navList: "font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8",
   navLink: "text-[18px] font-medium cursor-pointer hover:text-[#55679C]",
+  linkText: "font-medium lg:text-[21px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[31px]",
   logoLetter: "h-10 p-1",
   mobileMenuOverlay: "fixed inset-x-0 top-0 bottom-0 bg-black bg-opacity-50",
 };

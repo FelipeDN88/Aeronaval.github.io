@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import LogoLetter from '../assets/logo-letter.png';
 import Logo from '../assets/logo.png';
 import { navLinks } from '../constants';
-import { HeaderStyles, TextStyles } from '../styles/styles';
+import { HeaderStyles } from '../styles/styles';
 import { useDeviceType } from '../hooks/DevicesTypes';
 
 const Header: React.FC = () => {
@@ -65,10 +65,10 @@ const Header: React.FC = () => {
           <a href="#home" className="flex items-center space-x-3" onClick={() => handleNavClick('home')}>
             <img src={LogoLetter} alt="Logo" className={HeaderStyles.logoLetter} />
           </a>
-          <div className={`hidden md:flex flex-grow justify-center`}>
+          <div className={`hidden md:flex flex-grow justify-center pr-28`}>
             <ul className={`flex space-x-6 ${scrolling ? 'text-gray-900' : 'text-gray-200'}`}>
               {navLinks.map((link: { id: string; title: string }) => (
-                <li key={link.id} className={`font-square ${HeaderStyles.navLink} ${scrolling ? 'text-blue-950' : 'text-white'} ${TextStyles.paragraph}`}>
+                <li key={link.id} className={`font-square ${HeaderStyles.navLink} ${scrolling ? 'text-blue-950' : 'text-white'} ${HeaderStyles.linkText}`}>
                   <button
                     onClick={() => handleNavClick(link.id)}
                     className="focus:outline-none bg-transparent border-none"
