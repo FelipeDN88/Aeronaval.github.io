@@ -3,6 +3,7 @@ interface Project {
     description: string;
     imgUrl: string;
     icons: {icon: string, label: string}[];
+    category: "Hovercraft" | "PlasmaTex";
 }
 
 interface Navlink {
@@ -30,11 +31,12 @@ export const projects: Project[] = [
         {icon: "/maintenance-icon.png", label: "Manutenibilidade"},
         {icon: "/accessibility-icon.png", label: "Acessibilidade"},
         {icon: "/clipboard-icon.png", label: "Muiltiemprego"},
-      ]
+      ],
+      category: "Hovercraft",
     },
     {
         name:"ANV-SAR",
-        description: "O ANV-SAR é um hovercraft inovador, projetado para equipes de resgate dos Corpos de Bombeiros, oferecendo modularidade e portabilidade excepcionais. Ideal para situações críticas como enchentes e rompimentos de barragens, ele proporciona transporte fácil e segurança máxima, garantindo uma resposta ágil e eficaz em em situações críticas e emergenciais.",
+        description: "O ANV-SAR é um hovercraft inovador, inicialmente projetado para equipes de resgate dos Corpos de Bombeiros, oferecendo modularidade, portabilidade e resistência excepcionais. Ideal para situações críticas como enchentes e rompimentos de barragens, ele proporciona transporte fácil e segurança máxima, garantindo uma resposta ágil e eficaz em situações críticas e emergenciais.",
         imgUrl: "",
         icons: [
           {icon: "/modularity-icon.png", label: "Modularidade"},
@@ -44,7 +46,8 @@ export const projects: Project[] = [
           {icon: "/resgate.png", label: "Resgate"},
           {icon: "/earth-icon.png", label: "Turismo Náutico"},
           {icon: "/siren-icon.png", label: "Patrulhamento"},
-        ]
+        ],
+        category: "Hovercraft",
     },
     {
         name:"Tecido tecnológico PlasmaTex",
@@ -54,6 +57,7 @@ export const projects: Project[] = [
           {icon: "/shirt-icon.png", label: "Vestuário Inovador"},
           {icon: "/mesh-icon.png", label: "Tecido Tecnológico"},
           {icon: "/factory-icon.png", label: "Sustentabilidade"},
-        ]
+        ],
+        category: "PlasmaTex",
     },
 ];
