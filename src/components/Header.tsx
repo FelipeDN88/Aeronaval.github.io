@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import LogoLetter from '../assets/logo-letter.png';
+import LogoLetterWhite from '../assets/logo-letter-white.png';
 import Logo from '../assets/logo.png';
 import { navLinks } from '../constants';
 import { HeaderStyles } from '../styles/styles';
@@ -10,7 +11,6 @@ const Header: React.FC = () => {
   const [scrollY, setScrollY] = useState(0);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
-  const [activate, setActivate] = useState<string | null>(null);
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { isMobile } = useDeviceType();
 
@@ -43,68 +43,108 @@ const Header: React.FC = () => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
-    setActivate(id);
     setMobileMenuOpen(false); // Close mobile menu after clicking
   };
 
   const toggleMobileMenu = (event: React.MouseEvent) => {
-    event.preventDefault(); // Remove default behavior
-    setMobileMenuOpen(!isMobileMenuOpen); // Change state to open/close mobile menu
+    event.preventDefault();
+    setMobileMenuOpen(!isMobileMenuOpen);
   };
 
   const renderLogo = () => {
+    const logoSrc = scrolling ? LogoLetter : LogoLetterWhite;
+
     if (isMobile) {
       return (
         <a href="#home" onClick={() => handleNavClick('home')}>
-          <img src={LogoLetter} alt="Logo Letter" className={HeaderStyles.logoLetter} />
+          <img
+            src={logoSrc}
+            alt="Logo Letter"
+            className={HeaderStyles.logoLetter}
+          />
         </a>
       );
-    } else {
-      return (
-        <>
-          <a href="#home" className="flex items-center space-x-3" onClick={() => handleNavClick('home')}>
-            <img src={LogoLetter} alt="Logo" className={HeaderStyles.logoLetter} />
-          </a>
-          <div className={`hidden md:flex flex-grow justify-center pr-28`}>
-            <ul className={`flex space-x-6 ${scrolling ? 'text-gray-900' : 'text-gray-200'}`}>
-              {navLinks.map((link: { id: string; title: string }) => (
-                <li key={link.id} className={`font-square ${HeaderStyles.navLink} ${scrolling ? 'text-blue-950' : 'text-white'} ${HeaderStyles.linkText}`}>
-                  <button
-                    onClick={() => handleNavClick(link.id)}
-                    className="focus:outline-none bg-transparent border-none"
-                    style={{ backgroundColor: 'transparent', padding: 0 }}
-                  >
-                    {link.title}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <a href="#home" onClick={() => handleNavClick('home')}>
-            <img src={Logo} alt="Logo Letter" className={HeaderStyles.logo} />
-          </a>
-        </>
-      );
     }
+
+    // Desktop layout: includes central menu and side logo
+    return (
+      <>
+        <a href="#home" className="flex items-center space-x-3" onClick={() => handleNavClick('home')}>
+          <img src={logoSrc} alt="Logo" className={HeaderStyles.logoLetter} />
+        </a>
+        <div className="hidden md:flex flex-grow justify-center pr-28">
+          <ul className={`flex space-x-6 ${scrolling ? 'text-gray-900' : 'text-gray-200'}`}>
+            {navLinks.map((link: { id: string; title: string }) => (
+              <li
+                key={link.id}
+                className={`font-square ${HeaderStyles.navLink} ${
+                  scrolling ? 'text-blue-950' : 'text-white'
+                } ${HeaderStyles.linkText}`}
+              >
+                <button
+                  onClick={() => handleNavClick(link.id)}
+                  className="focus:outline-none bg-transparent border-none"
+                  style={{ backgroundColor: 'transparent', padding: 0 }}
+                >
+                  {link.title}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <a href="#home" onClick={() => handleNavClick('home')}>
+          <img src={Logo} alt="Logo" className={HeaderStyles.logo} />
+        </a>
+      </>
+    );
   };
 
   return (
-    <nav className={`${HeaderStyles.header} ${scrolling ? HeaderStyles.scrollBackground : HeaderStyles.background} ${isHeaderVisible ? HeaderStyles.visible : HeaderStyles.hidden}`}>
+    <nav
+      className={`${HeaderStyles.header} ${
+        scrolling ? HeaderStyles.scrollBackground : HeaderStyles.background
+      } ${isHeaderVisible ? HeaderStyles.visible : HeaderStyles.hidden}`}
+    >
       <div className="max-w-screen-2xl flex items-center justify-between mx-auto px-4">
         {renderLogo()}
         {/* Mobile button */}
-        <button onClick={toggleMobileMenu} className={HeaderStyles.mobileMenuButton}>
-          <svg className={HeaderStyles.menuIcon} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+        <button
+          onClick={toggleMobileMenu}
+          className={HeaderStyles.mobileMenuButton}
+        >
+          <svg
+            className={HeaderStyles.menuIcon}
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
           </svg>
         </button>
 
-        {/* Mobile colum*/}
+        {/* Mobile menu */}
         {isMobileMenuOpen && (
           <div className="absolute top-0 right-0 z-50 bg-[#111b3f] rounded-xl p-4">
             <button onClick={toggleMobileMenu} className="bg-transparent absolute top-0 right-0">
-              <svg className="h-6 w-6 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <svg
+                className="h-6 w-6 text-red-500"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             </button>
             <ul className="flex flex-col space-y-2 w-full">
