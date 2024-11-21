@@ -15,7 +15,7 @@ const ConsultingDetails: React.FC = () => {
       <div className={`${ConsultingStyles.card} ${ConsultingStyles.rightAlign}`}>
         <h2 className={TextStyles.subTitle}>Nossa Missão</h2>
         <p className={TextStyles.smallParagraph}>
-          Nossa missão é fornecer soluções de engenharia que atendam às necessidades de nossos clientes...
+        Nossa missão é fornecer soluções de engenharia que atendam às necessidades de nossos clientes, garantindo máxima confiabilidade, disponibilidade, facilidade de manutenção e segurança.
         </p>
         <h2 className={TextStyles.subTitle}>Nossa Visão</h2>
         <p className={TextStyles.smallParagraph}>
@@ -31,6 +31,10 @@ const ConsultingDetails: React.FC = () => {
           </li>
           <li className={ConsultingStyles.listItem}>
             <strong>Segurança:</strong> Constantemente buscamos a segurança em nossos desenvolvimentos...
+          </li>
+          <li className={ConsultingStyles.listItem}>
+            <strong>Segurança:</strong> Constantemente buscamos a segurança em nossos desenvolvimentos, permeando desde o projeto conceitual até a fase operacional.
+
           </li>
           <li className={ConsultingStyles.listItem}>
             <strong>Integridade:</strong> Atuamos com transparência e ética em todas as nossas ações.
