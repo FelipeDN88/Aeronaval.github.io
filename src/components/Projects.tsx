@@ -37,7 +37,7 @@ const Projects: React.FC = () => {
                             <p className={ProjectsStyles.hoverSection.paragraph}>
                                 {category === "Hovercraft"
                                     ? "Os hovercrafts são veículos anfíbios capazes de se deslocarem sobre diferentes superfícies, como água, terra, terrenos pantanosos e gelo, utilizando um colchão de ar gerado pelos motores. Esse sistema de sustentação permite que o veículo levite a uma curta distância do solo, reduzindo o atrito e garantindo alta mobilidade em áreas de difícil acesso. Seu uso é amplamente aplicado em operações de resgate, transporte em regiões alagadas e patrulhas, especialmente em locais onde veículos convencionais enfrentam limitações."
-                                    : "PlasmaTex é um projeto inovador que visa desenvolver uma nova geração de materiais texturizados utilizando tecnologia de plasma. Esses materiais oferecem propriedades únicas, como alta resistência a impactos e resistência a condições ambientais extremas. A Aeronaval está explorando aplicações do PlasmaTex em setores como moda, transporte e proteção pessoal, visando não apenas a funcionalidade, mas também a estética e o conforto dos produtos finais. Com PlasmaTex, buscamos redefinir o que é possível em design e engenharia de materiais."}
+                                    : ""}
                             </p>
                         </div>
                     )}

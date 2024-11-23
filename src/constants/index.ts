@@ -51,7 +51,7 @@ export const projects: Project[] = [
     },
     {
         name:"Tecido tecnológico PlasmaTex",
-        description: "Doenças transmitidas por mosquitos, como a dengue, são um problema crescente no Brasil e no mundo. A Aeronaval está revolucionando a proteção contra doenças transmitidas por mosquitos, com uma tecnologia de plasma frio que incorpora repelentes diretamente em tecidos. Esses materiais tratados oferecem uma defesa eficaz e prática para roupas esportivas, uniformes e fardas. Além de atender setores de defesa e civil, estamos impulsionando a inovação para futuras aplicações aeroespaciais.",
+        description: "Doenças transmitidas por mosquitos, como a dengue, são um problema crescente no Brasil e no mundo. A Aeronaval está revolucionando a proteção contra doenças transmitidas por mosquitos, com uma tecnologia de plasma frio que incorpora repelentes diretamente em tecidos. Esses materiais tratados oferecem uma defesa eficaz e prática para roupas esportivas, uniformes e fardas. Além de atender ao setor têxtil, estamos impulsionando a inovação para aplicações aeroespaciais.",
         imgUrl: "",
         icons: [
           {icon: "/shirt-icon.png", label: "Vestuário Inovador"},

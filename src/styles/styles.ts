@@ -103,9 +103,9 @@ const ConsultingStyles = {
 
 
 const FooterStyles = {
+  flexContainer: "flex justify-center w-full mt-16",
   footer: "w-full bg-[#000721] text-white py-8 bottom-0 left-0",
-  flexContainer: "flex justify-between w-full",
-  leftColumn: "w-full md:w-2/4",
+  leftColumn: "w-full md:w-2/4 justify-items-center",
   contactTitle: "text-lg font-bold mb-2",
   contactInfo: "text-sm",
   emailLink: "text-blue-400",

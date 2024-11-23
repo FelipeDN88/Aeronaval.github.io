@@ -8,7 +8,7 @@ const ConsultingDetails: React.FC = () => {
       <div className={`${ConsultingStyles.card} ${ConsultingStyles.leftAlign}`}>
         <h1 className={TextStyles.subTitle}>Consultoria</h1>
         <p className={TextStyles.smallParagraph}>
-        Com uma equipe experiente e multidisciplinar, a Aeronaval oferece consultoria completa para o planejamento e desenvolvimento de produtos de defesa. Desde a definição do Conceito de Operações (CONOps) até o suporte nas fases de desenvolvimento, fornecemos expertise estratégica e conhecimento detalhado sobre operações e planejamento de defesa, garantindo soluções eficazes ao longo de todo o ciclo de vida do projeto.
+        Com uma equipe experiente e multidisciplinar, a Aeronaval oferece consultoria completa para o planejamento e desenvolvimento de produtos de defesa. Desde a definição do Conceito de Operações (CONOps) até o suporte nas fases de desenvolvimento, fornecemos expertise estratégica e conhecimento sobre operações militares, garantindo soluções eficazes ao longo de todo o ciclo de vida do projeto.
         </p>
       </div>
 

@@ -49,9 +49,6 @@ const Footer: React.FC = () => {
               felipedavila@aeronaval.org
             </a>
           </p>
-        </div>
-
-        <div className={FooterStyles.centerColumn}>
           <p
             className={FooterStyles.footerText}
             style={{ fontSize: isMobile ? '8px' : '14px' }}
