@@ -25,8 +25,8 @@ export const handleSubmit = async (
 
   try {
     const response = await send(
-      'service_poh0z4m',  // Service ID
-      'template_1vnm85q', // Template ID
+      'service_tya7vsj',  // Service ID
+      'template_vxk31i4', // Template ID
       formValues, // Values to be sent
       'HkpAl6CvxAIoTzRl5' // Public key from emailJS
     );
