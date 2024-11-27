@@ -50,8 +50,8 @@ export const projects: Project[] = [
         category: "Hovercraft",
     },
     {
-        name:"Tecido tecnológico PlasmaTex",
-        description: "Doenças transmitidas por mosquitos, como a dengue, são um problema crescente no Brasil e no mundo. A Aeronaval está revolucionando a proteção contra doenças transmitidas por mosquitos, com uma tecnologia de plasma frio que incorpora repelentes diretamente em tecidos. Esses materiais tratados oferecem uma defesa eficaz e prática para roupas esportivas, uniformes e fardas. Além de atender ao setor têxtil, estamos impulsionando a inovação para aplicações aeroespaciais.",
+        name:"PlasmaTex",
+        description: "A Aeronaval tem buscado diversificar suas pesquisas com a intenção de expandir horizontes no setor aeroespacial. Com esse objetivo estratégico, estamos iniciando estudos voltados para tecnologia de plasma, desenvolvendo o projeto PlasmaTex. Essa pesquisa visa criar um equipamento de plasma capaz de realizar o beneficiamento de diversos tecidos, fornecendo recursos como repelência a insetos e proteção UV, além de outras propriedades úteis para os setores aeroespaciais e de defesa. Com o roteiro planejado, nosso objetivo é ser uma empresa de referência no desenvolvimento de tecnologias com plasmas não térmicos.",
         imgUrl: "",
         icons: [
           {icon: "/shirt-icon.png", label: "Vestuário Inovador"},
