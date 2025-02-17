@@ -37,7 +37,7 @@ export const projects: Project[] = [
     {
         name:"ANV-SAR",
         description: "O ANV-SAR é um hovercraft inovador, inicialmente projetado para equipes de resgate dos Corpos de Bombeiros, oferecendo modularidade, portabilidade e resistência excepcionais. Ideal para situações críticas como enchentes e rompimentos de barragens, ele proporciona transporte fácil e segurança máxima, garantindo uma resposta ágil e eficaz em situações críticas e emergenciais.",
-        imgUrl: "/src/assets/ANV-SAR_R01.png",
+        imgUrl: "/ANV-SAR_R01.png",
         icons: [
           {icon: "/modularity-icon.png", label: "Modularidade"},
           {icon: "/forklift-icon.png", label: "Portabilidade"},
