@@ -54,7 +54,7 @@ const ServicesStyles = {
 };
 const ProjectCardStyles = {
   container: "relative rounded-3xl overflow-hidden w-full max-w-[850px] h-auto flex flex-col items-center justify-between",
-  image: "absolute inset-0 w-full h-full object-cover z-0 blur-[1.5px]",
+  image: "w-full h-auto brightness-125",
   textContainer: "relative bg-black bg-opacity-60 p-4 rounded-lg text-white z-10 max-w-[85%] mb-10 mt-3",
   title: "font-bold text-[24px]",
   description: "mt-2 text-[16px]",
